@@ -4,18 +4,20 @@ class WebSeriesForm extends LitElement {
   static get styles() {
     return css`
       .container-left {
-        width: 50%;
+        width: 100%;
         background-color: rgb(149, 189, 202);
       }
       .form {
         justify-content: center;
-        padding: 0px 180px 0px 250px;
+        padding: 100px 300px 480px 250px;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
       }
       .form input,
       #platform {
         margin: 10px;
         padding: 5px;
-        width: 85%;
+        width: 200%;
         display: block;
         background-color: rgb(12, 121, 157);
       }
@@ -37,10 +39,6 @@ class WebSeriesForm extends LitElement {
 
   constructor() {
     super();
-    this.title = "";
-    this.directors = "";
-    this.stars = "";
-    this.platform = "";
   }
 
   render() {
